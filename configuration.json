@@ -1,0 +1,34 @@
+{
+	"train_split": 0.8, 
+	"channels": 1, 
+	"num_steps": 2000, 
+	"noise_dim": 400,
+	"use_random_noise": true,
+
+	"learning_rate": 0.0002,
+
+	"training_file": "./data/pd_patient_1_emg.csv",
+	"features": ["FLEXOR_EMG_FILTERED"],
+	"rescale": true,
+
+	"conv_activation": "relu",
+	"activation_function": "tanh", 
+	"moving_avg_window": 100, 
+	"wavelet_mother": "db7", 
+	"wavelet_levels": 2, 
+	"wavelet_trainable": false, 
+	"use_mini_batch": true,
+	"sliding_window": 10,	
+	"loss_function": "binary_crossentropy",
+	"optimizer": "adam",
+	"metrics": ["accuracy"],
+
+	"dropout_rate": 0.2, 
+
+	"sample_interval": 1000,
+	"epochs": 5000,
+	"batch_size": 100,
+	"save_sample": false,
+	"plot_losses": false,
+	"save_models": false
+}

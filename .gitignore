@@ -1,0 +1,7 @@
+output/*
+*.pyc
+*.png
+*.csv
+.vscode
+.ipynb_checkpoints
+*/__pycache__/*
