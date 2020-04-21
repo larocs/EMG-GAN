@@ -10,13 +10,14 @@ EMG-GAN is a custom implementation of a Deep Convolutional Generative Adversaria
 # Installation
 We strongly recommend the usage of Anaconda for managing python environments. 
 This set-up was tested under Windows 10, Ubuntu and Raspbian.
-
+```
   $ conda create --name emg_gan python=3.6
 	$ conda activate emg_gan
 	$ git clone https://github.com/larocs/EMG-GAN
   $ cd EMG-GAN/
   $ pip install -r requirements.txt
 	
+```
 	
 # Usage
 You can simply run the DCGAN pre-trained model already available inside ./saved_models to generate a batch of emg signals or you can train a new model based on your desired EMG signal.
@@ -86,6 +87,5 @@ Paper under review. Will be soon available.
 Thanks for the interest and please read the [Contributing](https://github.com/larocs/EMG-GAN/blob/master/CONTRIBUTING.md) recommendations.
 
 # Authors
-Esther Luna Colombini
-Rafael Anicet Zanini
+Esther Luna Colombini & Rafael Anicet Zanini
 
